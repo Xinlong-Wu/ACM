@@ -1,11 +1,12 @@
 #include<stdio.h>
 int main()
 {
-	int a;
-	int b;
-	scanf("%d",&a);
-	scanf("%d",&b);
-	printf("%d\n",a + b);
+	long a,b,c;
+	while(scanf("%ld %ld",&a,&b) != EOF)
+	{ 
+	c = a + b;
+	printf("%ld\n",c);
 	return 0;
+	}
 }
  
