@@ -1,6 +1,6 @@
 /*
-ÈÕÆÚ	18.09.18.
-ÃèÊö	ÊäÈëÈý¸ö×ÖÄ¸£¬¸ù¾ÝascallÂë´ÓÐ¡µ½´óÅÅÐò£¬²»Ê¹ÓÃÊý×é 
+æ—¥æœŸ	18.09.18.
+æè¿°	è¾“å…¥ä¸‰ä¸ªå­—æ¯ï¼Œæ ¹æ®ascallç ä»Žå°åˆ°å¤§æŽ’åºï¼Œä¸ä½¿ç”¨æ•°ç»„ 
 */
 #include<stdio.h>
 int main()
@@ -28,7 +28,7 @@ lable:
 			world1 = world3;
 			world3 = a;
 		}
-		if (world1 < world2 < world3)
+		if (world1 < world2 && world2 < world3)
 		{ 
 		printf ("%c %c %c",world1,world2,world3);
 		} 
@@ -37,5 +37,5 @@ lable:
 			goto lable;
 		}
 	 } 
-	 return 0;
+	return 0;
  } 
