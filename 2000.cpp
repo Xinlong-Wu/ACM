@@ -10,25 +10,25 @@ int main()
 	while(scanf("%c %c %c",&world1,&world2,&world3) != EOF)
 	{
 lable:
-		if (world1 > world2)
+		if (world1 > world2)	//判断前两个字母大小 
 		{
 			a = world1;
 			world1 = world2;
 			world2 = a;
 		}
-		if (world2 > world3)
+		if (world2 > world3)	//判断后两个字母大小 
 		{
 			a = world2;
 			world2 = world3;
 			world3 = a;
 		}
-		if (world1 > world3)
+		if (world1 > world3)	//判断第一个和第三个字母大小 
 		{
 			a = world1;
 			world1 = world3;
 			world3 = a;
 		}
-		if (world1 < world2 && world2 < world3)
+		if (world1 < world2 && world2 < world3)		//判断整体三个字母大小顺序 
 		{ 
 		printf ("%c %c %c",world1,world2,world3);
 		} 
