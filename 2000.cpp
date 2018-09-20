@@ -7,7 +7,7 @@ int main()
 {
 	int a;
 	char world1,world2,world3;
-	while(scanf("%c%c%c",&world1,&world2,&world3) != EOF)
+	while(scanf("%c %c %c",&world1,&world2,&world3) != EOF)
 	{
 lable:
 		if (world1 > world2)
