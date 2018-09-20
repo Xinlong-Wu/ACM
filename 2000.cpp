@@ -6,31 +6,31 @@
 int main()
 {
 	int a;
-	char world1,world2,world3;
-	while(scanf("%c %c %c",&world1,&world2,&world3) != EOF)
+	char word1,word2,word3;
+	while(scanf("%c %c %c",&word1,&word2,&word3) != EOF)
 	{
 lable:
-		if (world1 > world2)	//判断前两个字母大小 
+		if (word1 > word2)	//判断前两个字母大小 
 		{
-			a = world1;
-			world1 = world2;
-			world2 = a;
+			a = word1;
+			word1 = word2;
+			word2 = a;
 		}
-		if (world2 > world3)	//判断后两个字母大小 
+		if (word2 > word3)	//判断后两个字母大小 
 		{
-			a = world2;
-			world2 = world3;
-			world3 = a;
+			a = word2;
+			word2 = word3;
+			word3 = a;
 		}
-		if (world1 > world3)	//判断第一个和第三个字母大小 
+		if (word1 > word3)	//判断第一个和第三个字母大小 
 		{
-			a = world1;
-			world1 = world3;
-			world3 = a;
+			a = word1;
+			word1 = word3;
+			word3 = a;
 		}
-		if (world1 < world2 && world2 < world3)		//判断整体三个字母大小顺序 
+		if (word1 < word2 && word2 < word3)		//判断整体三个字母大小顺序 
 		{ 
-		printf ("%c %c %c",world1,world2,world3);
+		printf ("%c %c %c",word1,word2,word3);
 		} 
 		else
 		{
