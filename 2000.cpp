@@ -5,11 +5,10 @@
 #include<stdio.h>
 int main()
 {
-	int a;
-	char word1,word2,word3;
-	while(scanf("%c %c %c",&word1,&word2,&word3) != EOF)
+	char word1,word2,word3,a;
+	while(scanf("%c%c%c",&word1,&word2,&word3) != EOF)
 	{
-lable:
+		getchar()		//幻影换行符
 		if (word1 > word2)	//判断前两个字母大小 
 		{
 			a = word1;
@@ -28,14 +27,7 @@ lable:
 			word1 = word3;
 			word3 = a;
 		}
-		if (word1 < word2 && word2 < word3 && word1 < word3)		//判断整体三个字母大小顺序 
-		{ 
 		printf ("%c %c %c",word1,word2,word3);
-		} 
-		else
-		{
-			goto lable;
-		}
-		return 0;
 	 } 
+	return 0;
  } 
